@@ -1,0 +1,36 @@
+.navbar{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  .logo{
+    li{
+      list-style: none;
+      color: #C2E6E9;
+      font-family: 'SF Pro Light Italic';
+
+      cursor: pointer;
+
+    }
+  }
+  .list{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 4px;
+    li{
+      list-style: none;
+      color: #6F6F6D;
+      padding: 6px 22px;
+      padding-left: 25px;
+      border-radius: 50px;
+      font-size: 15px;
+      
+      cursor: pointer;
+
+      &.active{
+        color: #C2E6E9;
+        border: 1px solid #C2E6E9;
+      }
+    }
+  }
+}

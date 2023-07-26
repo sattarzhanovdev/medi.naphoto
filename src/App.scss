@@ -1,0 +1,38 @@
+*{
+  font-family: 'SF Pro Light';
+}
+
+body{
+  margin: 0;
+  background: #202020;
+  padding-left: 39px;
+  padding-top: 30px;
+  padding-right: 16px;
+}
+
+
+@font-face {
+  font-family: 'SF Pro Light';
+  src: url('./fonts/SFProDisplay-Light.ttf');
+}
+
+@font-face {
+  font-family: 'SF Pro Light Italic';
+  src: url('./fonts/SFProDisplay-LightItalic.ttf');
+}
+
+
+@font-face {
+  font-family: 'SF Pro Regular';
+  src: url('./fonts/SFProDisplay-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'SF Pro Medium';
+  src: url('./fonts/SFProDisplay-Medium.ttf');
+}
+
+@font-face {
+  font-family: 'SF Pro Semibold';
+  src: url('./fonts/SFProDisplay-Semibold.ttf');
+}

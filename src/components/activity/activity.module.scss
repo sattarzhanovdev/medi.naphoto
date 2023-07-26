@@ -1,0 +1,67 @@
+.activity{
+  margin-top: 138px;
+  display: flex;
+  .left{
+    margin-left: 40px;
+    h2{
+      font-size: 40px;
+      font-family: 'SF Pro Semibold';
+      color: #C2E6E9;
+      margin: 0;
+    }
+  }
+  .right{
+    margin-left: 37px;
+    p{
+      width: 80%;
+      font-size: 40px;
+      font-family: 'SF Pro Semibold';
+      margin: 0;
+      color: #6F6F6D;
+    }
+    .statistic{
+      display: flex;
+      align-items: flex-start;
+      gap: 92px;
+      margin-top: 41px;
+      div{
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        h1{
+          margin: 0;
+          color: white;
+          font-size: 65px;
+        }
+        p{
+          width: 100%;
+          color: #C2E6E9;
+          font-family: 'SF Pro Regular';
+          font-size: 26px;
+          margin: 0;
+        }
+      }
+    }
+    .down{
+      width: 80%;
+      display: flex;
+      justify-content: center;
+      margin-top: 50px;
+      li{
+        list-style: none;
+        color: #6F6F6D;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        font-family: 'SF Pro Medium';
+        font-size: 12px;
+        img{
+          width: 12px;
+          height: auto;
+          margin-top: 11px;
+        }
+      }
+    }
+  }
+}
