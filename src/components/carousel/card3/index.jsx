@@ -1,9 +1,9 @@
 import React from 'react'
 import c from './card.module.scss'
 
-const Card3 = () => {
+const Card3 = ({active, setActive}) => {
   return (
-    <div className={c.card}>
+    <div className={c.card} id={active === 1 ? c.card3 : active === 2 ? c.card2 : c.card1}>
       <div className={c.up}>
         <div className={c.dots}>
           <div></div>
@@ -11,13 +11,13 @@ const Card3 = () => {
           <div className={c.active}></div>
         </div>
         <div className={c.arrows}>
-          <button>
+          <button onClick={() => active === 1 ? setActive(3) : setActive(active -= 1)}>
             <img 
               src="/icons/left-dark.svg" 
               alt="left"
             />
           </button>
-          <button>
+          <button onClick={() => active === 3 ? setActive(1) : setActive(active += 1)}>
             <img 
               src="/icons/right-dark.svg" 
               alt="right"

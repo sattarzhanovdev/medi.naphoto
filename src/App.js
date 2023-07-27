@@ -1,5 +1,6 @@
 import React from 'react'
 import { Components } from './components'
+import Lenis from '@studio-freight/lenis'
 
 import './App.scss'
 
@@ -8,6 +9,15 @@ function App() {
     localStorage.setItem('activeSlide', JSON.stringify(1))
   }, [])
 
+  const lenis = new Lenis()
+  const [footerState, setFooterState] = React.useState(false)
+ 
+  function raf(time) {
+    lenis.raf(time)
+    requestAnimationFrame(raf)
+  }
+
+  raf(100000)
   return (
     <div>
       <header>

@@ -1,35 +1,23 @@
 import React from 'react'
 import c from './card.module.scss'
 
-const Card1 = () => {
-  const [ active, setActive ] = React.useState(0)
-  const [ dep, setDep ] = React.useState(0)
-
-  React.useEffect(() => {
-    const activeSlide = JSON.parse(localStorage.getItem('activeSlide'))
-    setActive(activeSlide)
-
-    setTimeout(() => {
-      setDep(Math.random())
-    }, 100)
-  }, [dep])
-
+const Card1 = ({active, setActive}) => {
   return (
-    <div className={c.card}>
+    <div className={c.card} id={active === 1 ? c.card1 : active === 2 ? c.card3 : active === 3 ? c.card2 : null }>
       <div className={c.up}>
         <div className={c.dots}>
-          <div></div>
-          <div></div>
           <div className={c.active}></div>
+          <div></div>
+          <div></div>
         </div>
         <div className={c.arrows}>
-          <button>
+          <button onClick={() => active === 1 ? setActive(3) : setActive(active -= 1)}>
             <img 
               src="/icons/left.svg" 
               alt="left"
             />
           </button>
-          <button>
+          <button onClick={() => active === 3 ? setActive(1) : setActive(active += 1)}>
             <img 
               src="/icons/right.svg" 
               alt="right"

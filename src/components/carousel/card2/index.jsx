@@ -1,23 +1,23 @@
 import React from 'react'
 import c from './card.module.scss'
 
-const Card2 = () => {
+const Card2 = ({active, setActive}) => {
   return (
-    <div className={c.card}>
+    <div className={c.card} id={active === 1 ? c.card2 : active === 2 ? c.card1 : c.card3 }>
       <div className={c.up}>
         <div className={c.dots}>
           <div></div>
-          <div></div>
           <div className={c.active}></div>
+          <div></div>
         </div>
         <div className={c.arrows}>
-          <button>
+          <button onClick={() => active === 1 ? setActive(3) : setActive(active -= 1)}>
             <img 
               src="/icons/left.svg" 
               alt="left"
             />
           </button>
-          <button>
+          <button onClick={() => active === 3 ? setActive(1) : setActive(active += 1)}>
             <img 
               src="/icons/right.svg" 
               alt="right"

@@ -1,17 +1,11 @@
 .carousel{
   margin-top: 50px;
+  position: relative;
+
   .cards{
     display: flex;
     align-items: center;
     flex-direction: column;
     position: relative;
-  }
-}
-
-@keyframes slide {
-  from{
-    transform: translateX(0);
-  } to{
-    transform: translateX(100%);
   }
 }
