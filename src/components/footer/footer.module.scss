@@ -1,0 +1,86 @@
+.footer{
+  margin-top: 77.72px;
+  margin-bottom: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 37px 40px;
+  border: 1px solid #6F6F6D;
+  border-radius: 23px;
+  .left{
+    .logo{
+      li{
+        list-style: none;
+        margin: 0;
+        font-size: 26px;
+        font-family: 'SF Pro Medium Italic';
+        color: #C2E6E9;
+      }
+    }
+    .list{
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      padding: 0;
+      margin-top: 20px;
+      gap: 9px;
+      li{
+        list-style: none;
+        font-size: 18px;
+        color: #6F6F6D;
+      }
+    }
+  }
+  .socials{
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    margin-left: 50px;
+    li{
+      list-style: none;
+    }
+  }
+  .contacts_card{
+    display: flex;
+    align-items: center;
+    gap: 42px;
+    div{
+      h1{
+        font-size: 26px;
+        color: white;
+        margin: 0;
+      }
+      p{
+        font-size: 26px;
+        margin: 0;
+        color: #C2E6E9;
+        font-family: 'SF Pro Regular';
+      }
+    }
+  }
+  .qr{
+    width: 140px;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 2px solid #4B4B4B;
+    border-radius: 13px;
+    gap: 7px;
+    img{
+      width: 91px;
+      height: 91px;
+      margin: 0;
+      padding: 0;
+    }
+    p{
+      width: 80%;
+      color: #4B4B4B;
+      text-align: center;
+      padding: 0;
+      margin: 0;
+      font-size: 15px;
+    }
+  }
+}

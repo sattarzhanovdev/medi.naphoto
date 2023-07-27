@@ -3,7 +3,7 @@ import c from './activity.module.scss'
 
 const Activity = () => {
   return (
-    <div className={c.activity}>
+    <div className={c.activity} id='about'>
       <div className={c.left}>
         <h2>
           Про <br />

@@ -8,6 +8,7 @@ body{
   padding-left: 39px;
   padding-top: 30px;
   padding-right: 16px;
+  scroll-behavior: smooth;
 }
 
 
@@ -21,7 +22,6 @@ body{
   src: url('./fonts/SFProDisplay-LightItalic.ttf');
 }
 
-
 @font-face {
   font-family: 'SF Pro Regular';
   src: url('./fonts/SFProDisplay-Regular.ttf');
@@ -30,6 +30,11 @@ body{
 @font-face {
   font-family: 'SF Pro Medium';
   src: url('./fonts/SFProDisplay-Medium.ttf');
+}
+
+@font-face {
+  font-family: 'SF Pro Medium Italic';
+  src: url('./fonts/SFProDisplay-MediumItalic.ttf');
 }
 
 @font-face {

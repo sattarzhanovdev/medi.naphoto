@@ -1,8 +1,14 @@
 .navbar{
+  width: 100%;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
   .logo{
+    padding: 33px 39px;
     li{
       list-style: none;
       color: #C2E6E9;
@@ -17,6 +23,7 @@
     flex-direction: column;
     align-items: flex-end;
     gap: 4px;
+    padding: 30px 16px;
     li{
       list-style: none;
       color: #6F6F6D;

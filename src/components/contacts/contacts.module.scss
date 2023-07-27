@@ -1,0 +1,57 @@
+.contacts{
+  display: flex;
+  margin-top: 111px;
+
+  .none{
+    height: 500px;
+
+  }
+  .left{
+    margin-left: 40px;
+    margin-right: 112px;
+    h1{
+      color: #C2E6E9;
+      font-size: 40px;
+      font-family: 'SF Pro Semibold';
+      margin: 0;
+    }
+  }
+  .right{
+    p{
+      font-size: 40px;
+      color: #6F6F6D;
+      margin: 0;
+      width: 778px;
+      font-family: 'SF Pro Semibold';
+    }
+    .contacts_card{
+      margin-top: 34px;
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      gap: 42px;
+      div{
+        h1{
+          font-size: 40px;
+          color: white;
+          margin: 0;
+        }
+        p{
+          font-size: 26px;
+          color: #C2E6E9;
+          font-family: 'SF Pro Regular';
+        }
+      }
+    }
+    .socials{
+      display: flex;
+      align-items: center;
+      margin-top: 33px;
+      gap: 22px;
+      li{
+        list-style: none;
+
+      }
+    }
+  }
+}

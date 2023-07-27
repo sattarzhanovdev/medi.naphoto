@@ -17,7 +17,12 @@ function App() {
         <Components.Banner />
         <Components.Activity />
         <Components.Collections />
+        <Components.Price />
+        <Components.Contacts />
       </main>
+      <footer>
+        <Components.Footer />
+      </footer>
     </div>
   )
 }

@@ -4,7 +4,7 @@ import Collection from './collection'
 
 const Collections = () => {
   return (
-    <div className={c.collections}>
+    <div className={c.collections} id='collections'>
       <div className={c.title}>
         <h2>Коллекции</h2>
       </div>
